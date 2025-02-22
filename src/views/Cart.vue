@@ -116,12 +116,13 @@ const totalPrice = () =>
           </div>
         </div>
         <!-- Checkout Button -->
-        <div>
-          <button
-            class="bg-black text-white text-center px-40 py-5 mt-5 rounded-lg transition-transform ease-in-out hover:scale-[1.02]"
+        <div class=" mt-10">
+          <router-link
+            to="/cart/checkout"
+            class="bg-black text-white text-center px-40 py-5 mt-10 rounded-lg transition-transform ease-in-out hover:scale-[1.02]"
           >
             PROCEED TO BUY
-          </button>
+          </router-link>
         </div>
       </div>
     </div>

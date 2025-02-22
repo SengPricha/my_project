@@ -1,15 +1,13 @@
-import { createApp } from "vue";
+import { createApp, reactive } from "vue";
 import "./style.css";
 import App from "./App.vue";
-import { Icon } from "@iconify/vue/dist/iconify.js";
-// import router from "./router";
-import "@fortawesome/fontawesome-free/css/all.css";
-/* import the fontawesome core */
-import { library } from "@fortawesome/fontawesome-svg-core";
 
-/* import font awesome icon component */
+import "@fortawesome/fontawesome-free/css/all.css";
+
+import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import router from "./router"; // Import the router
+import router from "./router"; 
+
 import {
   faCartShopping,
   faBars,
@@ -21,6 +19,7 @@ import {
   faArrowRightArrowLeft,
 } from "@fortawesome/free-solid-svg-icons";
 
+// Add the icons to the FontAwesome library
 library.add(
   faCartShopping,
   faTruckFast,
@@ -31,11 +30,26 @@ library.add(
   faTrash,
   faMagnifyingGlass
 );
-// const app = createApp(App);
-// app.use(router);
-// app.mount("#app");
-createApp(App)
-  .component("font-awesome-icon", FontAwesomeIcon)
-  .component("Icon", Icon)
-  .use(router) // Use the router
-  .mount("#app");
+
+// Create the Vue app
+const app = createApp(App);
+
+// Create global reactive states for cart and userData
+const cart = reactive([]);
+const userData = reactive({
+  receiverName: "",
+  phoneNumber: "",
+  address: "",
+  selectedCompany: "",
+  selectedBank: "",
+});
+
+// Provide the reactive states globally
+app.provide("cart", cart);
+app.provide("userData", userData);
+
+// Register FontAwesomeIcon as a global component
+app.component("font-awesome-icon", FontAwesomeIcon);
+
+// Use the router and mount the app
+app.use(router).mount("#app");

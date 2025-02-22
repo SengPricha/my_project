@@ -52,7 +52,7 @@
 
           <div class="flex justify-center items-center">
             <div class="hover:underline mt-2">Already have an account?</div>
-            <router-link to="/" class="mt-2">Login</router-link>
+            <router-link to="/login" class="mt-2">Login</router-link>
           </div>
         </div>
 
@@ -101,7 +101,7 @@ export default {
         confirmButtonColor: "#6D28D9",
       }).then(() => {
         // Redirect to login page
-        this.$router.push("/");
+        this.$router.push("/login");
       });
     },
   },

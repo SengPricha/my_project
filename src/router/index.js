@@ -12,16 +12,24 @@ import Cart from "../views/Cart.vue";
 import Login from "../views/Login.vue";
 
 const routes = [
-  { path: "/home", component: Home },
+  { path: "/", component: Home },
   { path: "/about", component: About },
   { path: "/contact", component: Contact },
   { path: "/service", component: Service },
   { path: "/cart", component: Cart },
-  { path: "/", component: Login },
+  { path: "/login", component: Login },
   { path: "/category", component: Category },
   {
-    path: "/signup",
+    path: "/login/signup",
     component: () => import("../views/SignUp.vue"),
+  },
+  {
+    path: "/cart/checkout",
+    component: () => import("../views/CheckOut.vue"),
+  },
+  {
+    path: "/cart/checkout/payment",
+    component: () => import("../views/Payment.vue"),
   },
 ];
 

@@ -44,7 +44,7 @@
           <a class="hover:underline mt-2" href="#">Forgot Password?</a>
           <div class="flex justify-center items-center">
             <div class="hover:underline mt-2">Don't have an account?</div>
-            <router-link to="/signup" class="mt-2"
+            <router-link to="/login/signup" class="mt-2"
               >Create new account</router-link
             >
           </div>
@@ -144,7 +144,7 @@ export default {
           icon: "success",
         }).then(() => {
           // Redirect to another page after successful login
-          this.$router.push("/home"); // Uncomment if using Vue Router
+          this.$router.push("/"); // Uncomment if using Vue Router
         });
       } else {
         Swal.fire({

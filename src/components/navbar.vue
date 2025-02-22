@@ -20,7 +20,7 @@
       </h1>
     </router-link>
     <ul class="hidden xl:flex items-center gap-4 font-semibold text-lg">
-      <router-link to="/home" v-slot="{ isActive }">
+      <router-link to="/" v-slot="{ isActive }">
         <li
           :class="[
             'p-3 rounded-md transition-all cursor-pointer',
@@ -95,7 +95,7 @@
           {{ cart.length }}
         </p>
       </router-link>
-      <router-link to="/">
+      <router-link to="/login">
         <button
           class="bg-black text-white rounded-full text-sm p-2 xl:w-20 xl:h-10 transition-transform ease-in-out hover:scale-[1.02]"
         >
@@ -118,7 +118,7 @@
       style="transition: 0.3s ease, opacity 0.3s ease"
     >
       <router-link
-        to="/home"
+        to="/"
         class="w-full"
         @click="closeMenu"
         v-slot="{ isActive }"

@@ -342,6 +342,7 @@
 
 <script setup>
 import { ref, computed, onMounted, inject } from "vue";
+import b1 from "/src/assets/img/b1.png"
 
 const observedElements = ref([]);
 
@@ -372,7 +373,7 @@ const menuProducts = ref([
     id: 1,
     name: "អាវក្រៅL",
     price: 6,
-    imgSrc: "./src/assets/img/b1.png",
+    imgSrc: b1,
   },
   {
     id: 2,
