@@ -342,8 +342,26 @@
 
 <script setup>
 import { ref, computed, onMounted, inject } from "vue";
-import b1 from "/src/assets/img/b1.png"
-
+import b1 from "/src/assets/img/b1.png";
+import c1 from "/src/assets/img/c1.png";
+import kit3 from "/src/assets/img/kit3.png";
+import c5 from "/src/assets/img/c5.png";
+import c6 from "/src/assets/img/c6.png";
+import kit6 from "/src/assets/img/kit6.png";
+import x3 from "/src/assets/img/x3.png";
+import x8 from "/src/assets/img/x8.png";
+import kit8 from "/src/assets/img/kit8.png";
+import kit9 from "/src/assets/img/kit9.png";
+import x2 from "/src/assets/img/x2.png";
+import x10 from "/src/assets/img/x10.png";
+import x11 from "/src/assets/img/x11.png";
+import x12 from "/src/assets/img/x12.png";
+import x1 from "/src/assets/img/x1.png";
+import kit10 from "/src/assets/img/kit10.png";
+import kit11 from "/src/assets/img/kit11.png";
+import kit12 from "/src/assets/img/kit12.png";
+  
+  
 const observedElements = ref([]);
 
 onMounted(() => {
@@ -379,103 +397,103 @@ const menuProducts = ref([
     id: 2,
     name: "ខោM",
     price: 9,
-    imgSrc: "./src/assets/img/c1.png",
+    imgSrc: c1,
   },
   {
     id: 3,
     name: "អាវក្រៅXL",
     price: 9,
-    imgSrc: "./src/assets/img/kit3.png",
+    imgSrc: kit3,
   },
   {
     id: 4,
     name: "ចង្កេះ30",
     price: 13,
-    imgSrc: "./src/assets/img/c5.png",
+    imgSrc: c5,
   },
   {
     id: 5,
     name: "ចង្កេះ30",
     price: 13,
-    imgSrc: "./src/assets/img/c6.png",
+    imgSrc: c6,
   },
   {
     id: 6,
     name: "អាវក្រៅM",
     price: 9,
-    imgSrc: "./src/assets/img/kit6.png",
+    imgSrc: kit6,
   },
   {
     id: 7,
     name: "អាវក្រណាត់L",
     price: 9,
-    imgSrc: "./src/assets/img/x3.png",
+    imgSrc: x3,
   },
   {
     id: 13,
     name: "អាវក្រណាត់L",
     price: 9,
-    imgSrc: "./src/assets/img/x8.png",
+    imgSrc: x8,
   },
   {
     id: 8,
     name: "អាវក្រៅL",
     price: 9,
-    imgSrc: "./src/assets/img/kit8.png",
+    imgSrc: kit8,
   },
   {
     id: 9,
     name: "អាវក្រៅL",
     price: 6,
-    imgSrc: "./src/assets/img/kit9.png",
+    imgSrc: kit9,
   },
   {
     id: 14,
     name: "អាវក្រណាត់L",
     price: 9,
-    imgSrc: "./src/assets/img/x2.png",
+    imgSrc: x2,
   },
   {
     id: 15,
     name: "អាវក្រណាត់L",
     price: 9,
-    imgSrc: "./src/assets/img/x10.png",
+    imgSrc: x10,
   },
   {
     id: 16,
     name: "អាវក្រណាត់L",
     price: 9,
-    imgSrc: "./src/assets/img/x11.png",
+    imgSrc: x11,
   },
   {
     id: 17,
     name: "អាវក្រណាត់L",
     price: 9,
-    imgSrc: "./src/assets/img/x12.png",
+    imgSrc: x12,
   },
   {
     id: 18,
     name: "អាវក្រណាត់L",
     price: 9,
-    imgSrc: "./src/assets/img/x1.png",
+    imgSrc: x1,
   },
   {
     id: 10,
     name: "អាវក្រៅM",
     price: 9,
-    imgSrc: "./src/assets/img/kit10.png",
+    imgSrc: kit10,
   },
   {
     id: 11,
     name: "អាវក្រៅ2XL",
     price: 13,
-    imgSrc: "./src/assets/img/kit11.png",
+    imgSrc: kit11,
   },
   {
     id: 12,
     name: "អាវក្រៅL",
     price: 9,
-    imgSrc: "./src/assets/img/kit12.png",
+    imgSrc: kit12,
   },
 ]);
 
